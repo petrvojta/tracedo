@@ -1,0 +1,19 @@
+<footer class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+
+                <p>
+                    {% for address in site.address %}
+                    {{ address.line }},
+                    {% endfor %},
+                    <i class="fa fa-phone fa-fw"></i> {{ site.telephone }}
+                    <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a
+                </p>
+
+                <p>Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+
+            </div>
+        </div>
+    </div>
+</footer>

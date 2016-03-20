@@ -1,0 +1,38 @@
+# Site settings
+title: TraceDo
+email: hello@tracedo.com
+url: https://www.tracedo.com
+copyright: TraceDo s.r.o.
+owner: TraceDo s.r.o.
+telephone: +420 777 211 754
+baseurl: /tracedo
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/tracedo
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: TraceDo s.r.o.
+  - line: U Špejcharu 409
+  - line: 252 67 Tuchoměřice
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+# Collections
+collections:
+    modules:
+        output: true
+    features:
+        output: true
+    benefits:
+        output: true
+
+# Assets
+sass:
+  sass_dir: _scss
+  #style: compressed

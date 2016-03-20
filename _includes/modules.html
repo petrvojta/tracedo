@@ -1,0 +1,22 @@
+
+<section id="modules" class="section modules">
+    <div class="container text-center">
+
+        <h2>Klíčové funkce TrackStone</h2>
+
+        <div class="row">
+
+            {% for module in site.modules %}
+            <div class="col-sm-6">
+                <div class="module">
+                    <!--<img src="http://dummyimage.com/160x293/ebebeb/004277" />-->
+                    <h3><i class="fa fa-star-o"></i> {{module.title}}</h3>
+                    <p>{{module.content}}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>

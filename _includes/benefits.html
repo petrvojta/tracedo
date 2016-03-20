@@ -1,0 +1,21 @@
+<!-- About Section -->
+<section id="benefits" class="section benefits bg-primary">
+    <div class="container text-center">
+
+        <h2>Přínosy pro uživatele</h2>
+
+        <div class="row">
+
+            {% for benefit in site.benefits limit:3 %}
+            <div class="col-sm-4">
+                <div class="benefit">
+                    <h3>{{benefit.title}}</h3>
+                    <p>{{benefit.content}}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
