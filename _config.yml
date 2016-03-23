@@ -1,9 +1,9 @@
 # Site settings
-title: TraceDo
+title: Tracedo
 email: hello@tracedo.com
 url: https://www.tracedo.com
-copyright: TraceDo s.r.o.
-owner: TraceDo s.r.o.
+copyright: Tracedo s.r.o.
+owner: Tracedo s.r.o.
 telephone: +420 777 211 754
 baseurl: /tracedo
 
@@ -14,7 +14,7 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: TraceDo s.r.o.
+  - line: Tracedo s.r.o.
   - line: U Špejcharu 409
   - line: 252 67 Tuchoměřice
 
@@ -32,7 +32,25 @@ collections:
     benefits:
         output: true
 
+# Exclude the following files/directories from being converted
+exclude: ['.gitignore', 'CHANGELOG.md', 'Gemfile', 'Gemfile.lock', 'LICENSE.md', 'README.md', 'npm*', 'package.json']
+
+gems:
+  - jekyll-assets
+
 # Assets
 sass:
   sass_dir: _scss
   #style: compressed
+
+
+# Assets Pipeline
+assets:
+  prefix: "/assets"
+  sources:
+    - _assets
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/bower
