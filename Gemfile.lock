@@ -70,7 +70,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
+  jekyll (= 3.0.1)
   jekyll-assets
   sass
   uglifier
