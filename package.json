@@ -1,11 +1,18 @@
 {
   "name": "tracedo",
   "version": "0.0.1",
-  "description": "",
+  "description": "www.tracedo.com",
   "main": "index.js",
+  "authors": [
+    "Petr Vojta <petr.vojta@abra.eu>"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/petrvojta/tracedo",
   "scripts": {
-    "serve": "jekyll serve --incremental"
+    "serve": "jekyll serve --incremental",
+    "deploy": "gh-pages -d _site"
   },
-  "author": "",
-  "license": ""
+  "devDependencies": {
+    "gh-pages": "^0.11.0"
+  }
 }

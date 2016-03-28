@@ -5,7 +5,7 @@ url: https://www.tracedo.com
 copyright: Tracedo s.r.o.
 owner: Tracedo s.r.o.
 telephone: +420 777 211 754
-baseurl: /tracedo
+baseurl: /
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -15,8 +15,8 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: Tracedo s.r.o.
-  - line: U Špejcharu 409
-  - line: 252 67 Tuchoměřice
+  - line: Dalimilova 579/5
+  - line: 130 00 Praha 3
 
 # Build settings
 markdown: kramdown
@@ -33,7 +33,7 @@ collections:
         output: true
 
 # Exclude the following files/directories from being converted
-exclude: ['.gitignore', 'CHANGELOG.md', 'Gemfile', 'Gemfile.lock', 'LICENSE.md', 'README.md', 'npm*', 'package.json']
+exclude: ['.gitignore', 'CHANGELOG.md', 'Gemfile', 'Gemfile.lock', 'LICENSE.md', 'README.md', 'npm*', 'package.json', 'node_modules', 'bower.json']
 
 gems:
   - jekyll-assets
@@ -41,8 +41,6 @@ gems:
 # Assets
 sass:
   sass_dir: _scss
-  #style: compressed
-
 
 # Assets Pipeline
 assets:

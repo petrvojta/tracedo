@@ -1,3 +1,5 @@
 _site
 .idea
-.awestruct
+.sass-cache
+.jekyll-metadata
+node_modules

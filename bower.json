@@ -1,0 +1,24 @@
+{
+  "name": "tracedo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Petr Vojta <petr.vojta@abra.eu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/petrvojta/tracedo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
