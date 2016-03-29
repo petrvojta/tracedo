@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": "https://github.com/petrvojta/tracedo",
   "scripts": {
-    "serve": "jekyll serve --incremental",
+    "serve": "jekyll serve",
     "deploy": "gh-pages -d _site"
   },
   "devDependencies": {

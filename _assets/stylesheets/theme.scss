@@ -121,8 +121,16 @@ body {
     line-height: 1.4;
   }
 
+  label {
+    font-size: 16px;
+  }
+
+  .form-control {
+    font-size: 16px;
+  }
+
   li {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 2;
   }
@@ -150,8 +158,16 @@ body {
       font-size: 18px;
     }
 
+    label {
+      font-size: 18px;
+    }
+
+    .form-control {
+      font-size: 18px;
+    }
+
     li {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }
@@ -191,17 +207,37 @@ body {
 /* benefits */
 .benefits {
 
-  .benefit {
-    text-align: center;
+  .nav {
 
-    ul {
-      list-style: none;
-      padding-left: 0px;
+    a {
+      font-size: 22px;
     }
+  }
+
+  .nav-stacked {
+    padding-top: 20px;
+  }
+
+  .benefit {
+    text-align: left;
+  }
+
+  .tab-content {
+    height: 300px;
   }
 }
 
 /* Footer */
 footer {
-  padding: 50px 0;
+  padding: 30px 0;
+}
+
+/* Contacts */
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  min-width: 300px;
+  text-align: left;
+  width: 50%;
 }

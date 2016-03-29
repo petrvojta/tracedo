@@ -2,20 +2,52 @@
 <section id="benefits" class="section benefits bg-primary">
     <div class="container text-center">
 
-        <h2>Přínosy pro uživatele</h2>
+        <h2>Přínosy řešení pro ...</h2>
 
-        <div class="row">
+        <div class="row benefits">
 
-            {% for benefit in site.benefits limit:3 %}
-            <div class="col-sm-4">
-                <div class="benefit">
-                    <h3>{{benefit.title}}</h3>
-                    <p>{{benefit.content}}</p>
-                </div>
+            <ul class="nav nav-pills nav-stacked col-sm-3 col-sm-offset-2" role="tablist">
+
+                {% for benefit in site.benefits limit:3 %}
+
+                    {% if forloop.index == 1 %}
+                        <li role="presentation" class="active">
+                    {% else %}
+                        <li role="presentation">
+                    {% endif %}
+
+                    <a href="#{{forloop.index}}" aria-controls="{{forloop.index}}" role="tab" data-toggle="tab">
+                        {{benefit.icon}} {{benefit.title}}
+                    </a>
+
+                </li>
+                {% endfor %}
+
+            </ul>
+
+            <div class="tab-content col-sm-7">
+
+                {% for benefit in site.benefits limit:3 %}
+
+                        {% if forloop.index == 1 %}
+                            <div role="tabpanel" class="tab-pane benefit active" id="{{forloop.index}}">
+                        {% else %}
+                            <div role="tabpanel" class="tab-pane benefit" id="{{forloop.index}}">
+                        {% endif %}
+
+                        <p>{{benefit.content}}</p>
+
+                    </div>
+
+                {% endfor %}
+
             </div>
-            {% endfor %}
 
         </div>
+
+        <br>
+
+        <a href="#contact" class="btn btn-lg btn-primary page-scroll" >Mám zájem o více informací</a>
 
     </div>
 </section>
