@@ -7996,8 +7996,12 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4; }
+  .section label {
+    font-size: 16px; }
+  .section .form-control {
+    font-size: 16px; }
   .section li {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 2; }
   .section.bg-primary h3 {
@@ -8010,8 +8014,12 @@ body {
     font-size: 22px; }
   .section p {
     font-size: 18px; }
+  .section label {
+    font-size: 18px; }
+  .section .form-control {
+    font-size: 18px; }
   .section li {
-    font-size: 16px; } }
+    font-size: 18px; } }
 /* About */
 /* features */
 .features h2 {
@@ -8028,12 +8036,22 @@ body {
     margin-right: 20px; }
 
 /* benefits */
-.benefits .benefit {
-  text-align: center; }
-  .benefits .benefit ul {
-    list-style: none;
-    padding-left: 0px; }
+.benefits {
+  height: 300px; }
+  .benefits .nav a {
+    font-size: 22px; }
+  .benefits .benefit {
+    text-align: left; }
 
 /* Footer */
 footer {
-  padding: 50px 0; }
+  padding: 30px 0; }
+
+/* Contacts */
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  min-width: 300px;
+  text-align: left;
+  width: 50%; }
