@@ -1,0 +1,29 @@
+<!-- About Section -->
+<section id="customers" class="section customers">
+    <div class="container text-center">
+
+        <h2>Zákazníci</h2>
+
+        <div class="row">
+
+            {% for customer in site.customers limit:3%}
+            <div class="col-sm-5 col-lg-offset-1">
+                <div class="customer">
+                    <img src="{{customer.logo}}" />
+                    <p>{{customer.content}}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="col-sm-5">
+
+                <p>Potřebujte také online sledovat Vaše přepravy?</p>
+
+                <a href="#contact" class="btn btn-lg btn-primary page-scroll" >Napište si o více informací</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

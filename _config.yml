@@ -31,6 +31,8 @@ collections:
         output: true
     benefits:
         output: true
+    customers:
+        output: true
 
 # Exclude the following files/directories from being converted
 exclude: ['.gitignore', 'CHANGELOG.md', 'Gemfile', 'Gemfile.lock', 'LICENSE.md', 'README.md', 'npm*', 'package.json', 'node_modules', 'bower.json']
