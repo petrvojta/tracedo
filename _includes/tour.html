@@ -1,0 +1,26 @@
+<section id="tour" class="section tour {{include.class}}">
+    <div class="container text-center">
+
+        <h2>Jak to funguje</h2>
+
+        <div class="row tour">
+            {% for tour in site.tour%}
+                <div class="col-xs-3 col-lg-2 col-lg-offset-2">
+                    <div class="tour-step-index">
+                        {{tour.icon}}
+                        <h3>{{tour.title}}</h3>
+                    </div>
+                </div>
+                <div class="col-xs-9 col-lg-8">
+                    <div class="tour-step">
+                        {{tour.content}}
+                        {% if tour.image %}
+                            {{ tour.image | image }}
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

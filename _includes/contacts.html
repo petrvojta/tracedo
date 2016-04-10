@@ -1,43 +1,59 @@
-
-<section id="contact" class="section contact bg-primary">
+<section id="contact" class="section contact {{include.class}}">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
 
-                <h2>Potřebujete efektivně sledovat Vaše přepravy?</h2>
+                <h2>Kontakt</h2>
 
-                <div class="contact-form">
+                <p>Chcete jednoduše sledovat Vaše přepravy? Chcete integrovat Váš informační systém?</p>
 
-                    <form action="https://formspree.io/hello@tracedo.com" method="POST">
+                <p>Pošlete nám email na <strong><a href="mailto:{{ site.email }}?subject=Contact">hello@tracedo.com</a></strong> a mi se Vám ozveme.</p>
 
-                        <input type="hidden" name="_subject" value="Contact from www.tracedo.com" />
-                        <input type="text" name="_gotcha" style="display:none" />
-                        <input type="hidden" name="_next" value="http://www.tracedo.com" />
-
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="_replyto">Email</label>
-                            <input type="email" class="form-control" name="_replyto" id="_replyto" placeholder="Your email">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="message" class="form-control" id="message"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-
-                    </form>
-
-                </div>
-
-                <p><i class="fa fa-2x fa-envelope-o"></i> <br><a href="mailto:{{ site.email }}?subject=Poptávka">hello@tracedo.com</a></p>
+                <button type="button" class="hidden btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Poslat vzkaz</button>
 
             </div>
         </div>
     </div>
 </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Napište nám</h4>
+            </div>
+            <div class="modal-body">
+
+                <form action="https://formspree.io/hello@tracedo.com" method="POST">
+
+                    <input type="hidden" name="_subject" value="Contact from www.tracedo.com" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_next" value="http://www.tracedo.com" />
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="_replyto">Email</label>
+                        <input type="email" class="form-control" name="_replyto" id="_replyto" placeholder="Your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="form-control" id="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 _site
 .idea
 .sass-cache
+.asset-cachegis
 .jekyll-metadata
 node_modules

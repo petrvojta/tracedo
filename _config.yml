@@ -1,5 +1,5 @@
 # Site settings
-title: Tracedo
+title: Tracedo - online sledování přeprav
 email: hello@tracedo.com
 url: https://www.tracedo.com
 copyright: Tracedo s.r.o.
@@ -32,6 +32,8 @@ collections:
     benefits:
         output: true
     customers:
+        output: true
+    tour:
         output: true
 
 # Exclude the following files/directories from being converted
