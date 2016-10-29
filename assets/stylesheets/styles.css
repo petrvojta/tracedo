@@ -7945,6 +7945,8 @@ body {
 .navbar-dark {
   color: #fff;
   background-color: #004277; }
+  .navbar-dark .navbar-toggle .icon-bar {
+    background-color: #fff; }
 
 .navbar-dark a {
   color: #fff !important; }
