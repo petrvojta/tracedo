@@ -55,6 +55,13 @@ body {
 .navbar-dark {
   color: #fff;
   background-color: #004277;
+
+  .navbar-toggle {
+
+    .icon-bar {
+      background-color: $navbar-inverse-toggle-icon-bar-bg;
+    }
+  }
 }
 
 .navbar-dark a {

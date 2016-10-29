@@ -1,5 +1,5 @@
 # Site settings
-title: Tracedo - online sledování přeprav
+title: Tracedo - mobile shipment tracking
 name: Tracedo
 email: hello@tracedo.com
 url: https://www.tracedo.com
@@ -7,6 +7,7 @@ copyright: Tracedo s.r.o.
 owner: Tracedo s.r.o.
 telephone: +420 777 211 754
 baseurl: /
+google_analytics: UA-86495639-1
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -15,7 +16,7 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Tracedo s.r.o.
+  - line: Tracedo
   - line: Dalimilova 579/5
   - line: 130 00 Praha 3
 
