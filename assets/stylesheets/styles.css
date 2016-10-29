@@ -7949,6 +7949,17 @@ body {
 .navbar-dark a {
   color: #fff !important; }
 
+a.signup {
+  color: #426F8F; }
+
+a.signup2 {
+  margin-left: 10px;
+  border: 1px solid #426F8F;
+  padding: 7px 10px !important;
+  margin-top: 7px;
+  font-size: 14px !important;
+  background-color: transparent; }
+
 .bg-primary {
   color: #fff;
   background-color: #004277; }
