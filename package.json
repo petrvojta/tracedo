@@ -1,6 +1,6 @@
 {
   "name": "tracedo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "www.tracedo.com",
   "main": "index.js",
   "authors": [
@@ -9,14 +9,12 @@
   "license": "MIT",
   "repository": "https://github.com/petrvojta/tracedo",
   "scripts": {
-    "build": "jekyll build",
-    "serve": "JEKYLL_ENV=development jekyll serve & guard",
+    "build": "bundle exec jekyll build",
+    "serve": "JEKYLL_ENV=development bundle exec jekyll serve & guard",
     "predeploy": "JEKYLL_ENV=production npm run build",
     "deploy": "gh-pages -d _site"
-
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "gh-pages": "0.11.0"
   }
-
 }

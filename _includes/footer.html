@@ -11,15 +11,15 @@
                     <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a
                 </p>
 
+                {% if jekyll.environment == 'development' %}
+                <p>ENV: Development</p>
+                {% endif %}
+
+                {% if jekyll.environment == 'test' %}
+                <p>ENV: Test</p>
+                {% endif %}
+
             </div>
         </div>
     </div>
 </footer>
-
-{% if jekyll.environment == 'development' %}
-<p>Development</p>
-{% endif %}
-
-{% if jekyll.environment == 'test' %}
-<p>Test</p>
-{% endif %}
